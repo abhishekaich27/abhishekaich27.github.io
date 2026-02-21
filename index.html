@@ -1,573 +1,537 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
-  <link rel   = "icon"       href    = "data/icon.png">
-  <meta name  = "viewport"   content = "width=device-width">
-  <link href  = 'https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
-  <link rel   = "stylesheet" href    ="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-  <link rel   = "stylesheet" href    = "https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-  <link rel   = "stylesheet" href    = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta name  = "generator"  content = "HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Abhishek Aich — Researcher</title>
+  <meta name="description" content="Researcher at NEC Laboratories America. Agentic AI, vision-language models, open-vocab perception, and efficient transformers." />
 
-  <style type = "text/css">
-    /* Color scheme stolen from Sergey Karayev */
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.cdnfonts.com/css/latin-modern-sans" rel="stylesheet">
 
-    a {
-      color: #1772d0;
-      text-decoration: none;
+  <style>
+    * { font-family: 'Latin Modern Sans', 'LMSans10', sans-serif; }
+    .fade-in { animation: fadeIn 0.8s ease-in; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
-
-    a:focus,
-    a:hover {
-      color: #f09228;
-      text-decoration: none;
+    .hover-underline { position: relative; }
+    .hover-underline::after {
+      content: ''; position: absolute; width: 0; height: 1px; bottom: -2px; left: 0;
+      background-color: currentColor; transition: width 0.3s ease;
     }
-
-    body,
-    td,
-    th,
-    tr,
-    p,
-    a {
-      font-family: 'Didact Gothic';
-      font-size: 18px
-    }
-    body {
-    text-align: justify;
-    }
-    strong {
-      font-family: 'Didact Gothic';
-      font-size: 18px;
-    }
-
-    heading {
-      font-family: 'Didact Gothic';
-      font-size: 20px;
-    }
-
-    papertitle {
-      font-family: 'Didact Gothic';
-      font-size: 18px;
-      font-weight: 700
-    }
-
-    name {
-      font-family: 'Didact Gothic';
-      font-size: 30px;
-    }
-
-    .one {
-      width: 1000px;
-      height: 160px;
-      position: relative;
-    }
-
-    .two {
-      width: 1000px;
-      height: 160px;
-      position: absolute;
-      transition: opacity .2s ease-in-out;
-      -moz-transition: opacity .2s ease-in-out;
-      -webkit-transition: opacity .2s ease-in-out;
-    }
-
-    .fade {
-      transition: opacity .2s ease-in-out;
-      -moz-transition: opacity .2s ease-in-out;
-      -webkit-transition: opacity .2s ease-in-out;
-    }
-
-    span.highlight {
-      background-color: #ffffd0;
-    }
-
-    .bordered {
-    width: auto;
-    height: auto;
-    padding: auto;
-    border: 0px solid black;
-    border-radius: 10px;
-    background-color: white;
-    }
-    .borderedUpdate {
-    width: 1000px;
-    height: auto;
-    padding: auto;
-    border: 0px solid black;
-    border-radius: 10px;
-    background-color: #dae7ef;
-    }
-    .borderedEnd {
-    width: 1000px;
-    height: auto;
-    padding: auto;
-    border: 0px solid black;
-    border-radius: 10px;
-    background-color: #dae7ef;
-    }
-    .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    .imgShadow{
-    }
-    p{
-    text-align: justify;
-    text-justify: inter-word;
-    }
+    .hover-underline:hover::after { width: 100%; }
+    .nav-blur { backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.82); }
+    .card-hover { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .card-hover:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
+    .paper-row { transition: background-color 0.2s ease, transform 0.2s ease; }
+    .paper-row:hover { background-color: rgba(0,0,0,0.03); transform: translateX(6px); }
+    .chip { border: 1px solid rgba(0,0,0,0.12); }
   </style>
-
-  <title>Abhishek Aich</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
-    <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-      <td>
-        <table class="bordered" width="100%" align="center" border="00" cellspacing="0" cellpadding="50">
-          <tr>
-            <td width="67%" valign="middle">
-              <p align=center>
-                <name>Abhishek Aich</name>
-              </p>
-              <p align=center style="font-size:18px">
-                <!-- &nbsp<i class="fa fa-male" style="font-size:12px"></i> Ph.D. Candidate<br>
-                <a href="https://vcg.ece.ucr.edu"><i class="fa fa-users" style="font-size:12px"></i> Video Computing Group (VCG)</a> <br>
-                <a href="https://www.ee.ucr.edu"><i class="fa fa-sitemap" style="font-size:12px"></i> Dept. of Electrical & Computer Engineering</a> <br>
-                <a href="https://www.ucr.edu"><i class="fa fa-university" style="font-size:12px"></i> University of California, Riverside (UCR)</a> <br><br><br>
-                -->
-                I am a Researcher at <a href="https://www.nec-labs.com/research/media-analytics/home/"> NEC Laboratories, America</a>. Before this, I received my Ph.D. from <a href="https://www.ucr.edu">University of California, Riverside</a> in 2023, under the supervision of <a href="https://vcg.engr.ucr.edu/amit/">Prof. Amit K. Roy-Chowdhury</a>. <br><br>
-                During my Ph.D. studies, I was extremely fortunate to have interned at <a href="https://www.nec-labs.com/research/media-analytics/home/"> NEC Laboratories, America</a> (2022), <a href="https://www.merl.com/"> Mitsubishi Electric Research Laboratories </a> (2021) and <a href="https://www.uii-ai.com/"> UII, America</a> (2020).
-                <br><br>
-                <a href="mailto:aaich001@ucr.edu"><i class="fa fa-envelope" style="font-size:24px"></i></a> &nbsp/&nbsp
-                <a href="data/AbhishekAich-CV.pdf"><i class="ai ai-cv ai-3x" style="font-size:24px"></i></a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=8GhG46cAAAAJ&hl=en&authuser=1"><i class="ai ai-google-scholar-square ai-3x" style="font-size:24px"></i></a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/abhishekaich27/"> <i class="fa fa-linkedin-square" style="font-size:24px"></i></a>&nbsp/&nbsp
-                <a href="https://github.com/abhishekaich27"> <i class="fa fa-github-square" style="font-size:24px"></i></a><br><br>
-                <b> Research opportunities: </b> I am happy to collaborate on projects involving (not limited to) vision-language models, open-vocab perception, efficient transformers, and dynamic networks. If you are interested, please send me an email. 
-                <!-- <br><br>
-                <i style="color: red;">[New workshop]</i> I'm co-organizing a workshop at AAAI 2024 titled <strong>Artificial Intelligence with Biased or Scarce Data</strong>. Check out the website of the workshop <a href = "https://aibsdworkshop.github.io/2024/index.html">here</a> and consider submitting your paper.
-                -->
-              </p>
-            </td>
-            <td width="33%">
-              <img class = "imgShadow" src="data/Abhishek_circle.png" width="224" height="250">
-            </td>
-          </tr>
-        </table>
-        <!--<br><br>
-        <table class="bordered" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <heading><b>&nbsp&nbsp&nbsp About me: </b></heading><br>
-          <tr>
-            <td width="800" valign="middle">
-              <p align="right">
-                I am a Researcher at <a href="https://www.necam.com/"> NEC Laboratories</a>, America. Before this, I received my Ph.D. from <a href="https://www.ucr.edu">University of California, Riverside</a> in 2023, under the supervision of <a href="https://vcg.engr.ucr.edu/amit/">Prof. Amit K. Roy-Chowdhury</a>. <br><br>
-                During my Ph.D. studies, I was extremely fortunate to have interned at <a href="https://www.necam.com/"> NEC Laboratories, America</a> (2022), <a href="https://www.merl.com/"> Mitsubishi Electric Research Laboratories </a> (2021) and <a href="https://www.uii-ai.com/en"> UII, America</a> (2020).
-              </p>
-            </td>
-          </tr>
-        </table>
-        <br><br> -->
-        <table class="borderedUpdate" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <heading><b>&nbsp&nbsp&nbsp Updates: </b></heading><br>
-          <tr>
-            <td width="100%" valign="middle">
-              <p>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Nov 2025: Organizing CVPR2026 Workshop <a href='https://adfmw.github.io/cvpr26/'>Anomaly Detection with Foundation Models (ADFM)</a>.
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Oct 2025: Organizing AAAI2026 Workshop <a href='https://aibsdworkshop.github.io/2026/index.html'>Artificial Intelligence with Biased or Scarce Data (AIBSD)</a>.
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Sept 2025: Paper on vision-based LLM grounding for dash-cam video reasoning accepted in <a href="https://neurips.cc/">NeurIPS 2025</a>!
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> July 2025: Paper accepted in ICCV2025 Workshop <a href='https://sites.google.com/view/datacv-iccv25/'>The 4th DataCV Workshop and Challenge</a>.
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> May 2025: Organizing ICCV2025 Workshop <a href='https://adfmw.github.io/iccv25/'>Anomaly Detection with Foundation Models (AFDM)</a>.
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Jan 2025: Paper on efficient encoders for Mask2Former-style architectures accepted in <a href="https://iclr.cc/Conferences/2025"> ICLR 2025 </a>!
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Jan 2025: We won the first place in <a href="https://its.dot.gov/research-areas/Intersection-Safety-Challenge/"> U.S. DOT Intersection Safety Challenge 2025 (Stage 1B) </a>!
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Oct 2024: Organizing WACV2025 Workshop <a href='https://sites.google.com/ucr.edu/cooolsworkshop/home'>Out-of-Label Hazards in Autonomous Driving</a>.
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Oct 2024: Organizing AAAI2025 Workshop <a href='https://seasworkshop.github.io/aaai25/index.html'>Scalable and Efficient Artificial Intelligence Systems (SEAS)</a>.
-        <!--    <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Apr 2024: Paper accepted in CVPR2024 Workshop <a href='https://sites.google.com/view/ecv24'>Efficient Deep Learning for Computer Vision CVPR Workshop 2024</a>.
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Feb 2024: Organized the 2nd Workshop on <a href='https://aibsdworkshop.github.io/2024/index.html'>Artificial Intelligence with Biased and Scarce Data</a>, in conjunction with AAAI24.
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> July 2023: Paper on Controllable Multi-Task Architectures accepted in <a href="https://iccv2023.thecvf.com/"> ICCV2023 </a> !
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> April 2023: Joined <a href="https://www.nec-labs.com/research/media-analytics/home/"> NEC Laboratories</a>, San Jose, CA as Researcher!
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Dec 2022: Received Doctoral Consortium Award from <a href="https://wacv2023.thecvf.com/"> WACV2023 </a>!
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Oct 2022: Paper on Zero-shot Cross-domain Video Anomaly Detection in <a href="https://wacv2023.thecvf.com/"> WACV2023 </a>!
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Oct 2022: Received NeurIPS Scholar Award from <a href="https://neurips.cc/"> NeurIPS2022 </a>!
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Sept 2022: Paper on Generative attacks on multi-object scenes using vision-language models accepted in <a href="https://neurips.cc/"> NeurIPS2022 </a>!
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Aug 2022: Paper on Generative attacks on multi-object scenes by leveraging local patch differences accepted in <a href="https://wacv2023.thecvf.com/"> WACV2023 </a>!
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> June 2022: Joined <a href="https://www.necam.com/"> NEC Laboratories</a>, San Jose, CA as Research Intern!
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> June 2022: Paper on Poisson denoising of bio-imaging datasets accepted in <a href="https://conferences.miccai.org/2022/en/"> MICCAI2022 </a>!
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Sept 2021: Paper on Adversarial Attacks on Black-Box Video classifiers accepted in <a href="https://neurips.cc/"> NeurIPS2021 </a>!
-            <br>
-         &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> July 2021: Paper on Supervised Video Re-Identification accepted in <a href="http://iccv2021.thecvf.com/home"> ICCV2021 </a>!
-            <br>
-        &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> June 2021: Joined <a href="https://www.merl.com/"> Mitsubishi Electric Research Laboratories </a>, Cambridge, MA as Research Intern
-            <br>
-         &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Mar 2021: Selected as Student Volunteer @ ICLR 2021
-            <br>
-              &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Oct 2020: Selected as Student Volunteer @ NeurIPS 2020
-            <br>
-              &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> July 2020: Paper accepted in ACM MM 2020
-            <br>
-              &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> June 2020: Joined <a href="https://www.uii-ai.com/en"> UII, America</a>, Cambridge, MA as Research Intern
-              <br>
-              &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Feb 2020: Paper accepted in IEEE CVPR 2020
-            <br>
-              &nbsp<i class="fa fa-share-alt" style="font-size:12px"></i> Feb 2020: Paper accepted in IEEE ISBI 2020 Workshop  
-              -->    
+<body class="bg-white text-gray-900 antialiased selection:bg-gray-900 selection:text-white">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full nav-blur border-b border-gray-100 z-50 transition-all duration-300" id="navbar">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
+        <a href="#about" class="hover:text-gray-900 hover-underline transition-colors">About</a>
+        <a href="#updates" class="hover:text-gray-900 hover-underline transition-colors">Updates</a>
+        <a href="#publications" class="hover:text-gray-900 hover-underline transition-colors">Publications</a>
+        <a href="#notes" class="hover:text-gray-900 hover-underline transition-colors">Notes</a>
+      </div>
+
+      <button class="md:hidden" onclick="toggleMenu()" aria-label="Menu">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white">
+      <div class="px-6 py-4 space-y-3 text-sm">
+        <a href="#about" class="block hover:text-gray-900 transition-colors">About</a>
+        <a href="#updates" class="block hover:text-gray-900 transition-colors">Updates</a>
+        <a href="#publications" class="block hover:text-gray-900 transition-colors">Publications</a>
+        <a href="#notes" class="block hover:text-gray-900 transition-colors">Notes</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="about" class="pt-32 pb-14 md:pt-40 md:pb-20 px-6 max-w-5xl mx-auto fade-in">
+    <div>
+        <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-3">
+          Abhishek Aich
+        </h1>
+
+        <p class="text-lg text-gray-600 mb-5 font-light">
+          Researcher at <a class="text-gray-900 hover-underline font-medium" href="https://www.nec-labs.com/" target="_blank" rel="noreferrer">NEC Laboratories America</a>
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+          <div class="md:col-span-2 p-6 rounded-2xl border border-gray-200 card-hover">
+            <h3 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+              <i data-lucide="user" class="w-5 h-5 text-gray-700"></i>
+              About
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Ph.D. (2023) from UC Riverside (Vision and Learning Group),
+              advised by <a class="text-gray-900 hover-underline font-medium" href="https://vcg.engr.ucr.edu/amit" target="_blank" rel="noreferrer">Prof. Amit K. Roy-Chowdhury</a>.
             </p>
-            </td>
-          </tr>
-        </table><br><br>
-        <table class="borderedUpdate" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <heading><b>&nbsp&nbsp&nbsp Publications/Submissions (*: joint first authors): </b></heading><br>
-          <tr>
-            <td width="100%" valign="middle">
-              <a href="https://arxiv.org/pdf/2509.19552.pdf">
-                <papertitle>iFinder: Structured Zero-Shot Vision-Based LLM Grounding for Dash-Cam Video Reasoning</papertitle>
-              </a>
-              <br>
-              <a href="https://gyeow.github.io/">Manyi Yao</a>,
-              <a href="https://www.linkedin.com/in/bingbing-zhuang-6a4a4a1a0/">Bingbing Zhuang</a>,
-              <a href="https://www.linkedin.com/in/garg-sparsh/">Sparsh Garg</a>,
-              <a href="https://vcg.engr.ucr.edu/people/amit-roy-chowdhury">Amit Roy-Chowdhury</a>,
-              <a href="https://www.cs.ucr.edu/~cshelton/">Christian Shelton</a>,
-              <a href="https://cseweb.ucsd.edu/~mkchandraker/">Manmohan Chandraker</a>,
-              <strong>Abhishek Aich</strong>
-              <br><em>NeurIPS</em>, 2025
-              <br><br>
-              <svg height = "1">
-                <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-              </svg><br><br>
-              <a href="https://arxiv.org/pdf/2508.02047.pdf">
-                <papertitle>Mapillary Vistas Validation for Fine-Grained Traffic Signs: A Benchmark Revealing Vision-Language Model Limitations</papertitle>
-              </a>
-              <br>
-              <a href="https://www.linkedin.com/in/garg-sparsh/">Sparsh Garg</a>,
-            <strong>Abhishek Aich</strong>
-            <br><em>IEEE/CVF ICCV Workshop (4th DataCV Workshop and Challenge)</em>, 2025 &nbsp
-            [<a href="https://github.com/nec-labs-ma/relabeling">Code, Dataset</a>]
-            <br><br>
-            <svg height = "1">
-                <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-              </svg><br><br>
-              <a href="https://arxiv.org/pdf/2404.14657.pdf">
-                <papertitle>Progressive Token Length Scaling in Transformer Encoders for Efficient Universal Segmentation</papertitle>
-              </a>
-              <br>
-              <strong>Abhishek Aich</strong>,
-        <a href="https://yuminsuh.github.io/">Yumin Suh</a>,
-        <a href="https://samschulter.github.io/">Samuel Schulter</a>,
-        <a href="https://cseweb.ucsd.edu/~mkchandraker/">Manmohan Chandraker</a>
-        <br><em>ICLR</em>, 2025 &nbsp
-        [<a href="https://github.com/abhishekaich27/proscale-pytorch">Code</a>]
-        <br><br>
-        <svg height = "1">
-                <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-              </svg><br><br>
-              <a href="https://www.arxiv.org/pdf/2409.09893">
-                <papertitle>Resolving Inconsistent Semantics in Multi-Dataset Image Segmentation</papertitle>
-              </a>
-              <br>
-        <a href="https://qzhangli.github.io/index.html">Qilong Zhangli</a>,
-        <a href="https://lsn33096.github.io/index.html">Di Liu</a>,
-        <strong>Abhishek Aich</strong>,
-        <a href="https://people.cs.rutgers.edu/~dnm/">Dimitris Metaxas</a>,
-        <a href="https://samschulter.github.io/">Samuel Schulter</a>
-        <br><em>arXiv</em>, 2024
-        <br><br>
-        <svg height = "1">
-                <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-              </svg><br><br>
-              <a href="https://arxiv.org/pdf/2404.15244.pdf">
-                <papertitle>Efficient Transformer Encoders for Mask2Former-style models</papertitle>
-              </a>
-              <br>
-        <a href="https://gyeow.github.io/">Manyi Yao</a>,
-        <strong>Abhishek Aich</strong>,
-        <a href="https://yuminsuh.github.io/">Yumin Suh</a>,
-        <a href="https://vcg.engr.ucr.edu/people/amit-roy-chowdhury">Amit K. Roy-Chowdhury</a>,
-        <a href="https://www.cs.ucr.edu/~cshelton/">Christian R. Shelton</a>,
-        <a href="https://cseweb.ucsd.edu/~mkchandraker/">Manmohan Chandraker</a>
-        <br><em>arXiv</em>, 2024 &nbsp
-        [<a href="https://github.com/GYeow/ECO-M2F">Code</a>]
-        <br><br>
-        <svg height = "1">
-                <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-              </svg><br><br>
-              <a href="https://openaccess.thecvf.com/content/CVPR2024W/ECV24/papers/Suh_Improving_the_Efficiency-Accuracy_Trade-off_of_DETR-Style_Models_in_Practice_CVPRW_2024_paper.pdf">
-                <papertitle>Improving the Efficiency-Accuracy Tradeoff of DETR-Style Models in Practice</papertitle>
-              </a>
-              <br>
-        <a href="https://yuminsuh.github.io/">Yumin Suh</a>,
-        <a href="https://www.numpee.com/">Dongwan Kim</a>,
-        <strong>Abhishek Aich</strong>,
-        <a href="https://samschulter.github.io/">Samuel Schulter</a>,
-        <a href="https://jongchyisu.github.io/">Jong-Chyi Su</a>,
-        <a href="https://cv.snu.ac.kr/index.php/~bhhan/">Bohyung Han</a>,
-        <a href="https://cseweb.ucsd.edu/~mkchandraker/">Manmohan Chandraker</a>
-        <br><em>IEEE/CVF CVPR Workshop (Efficient Deep Learning for Computer Vision)</em>, 2024
-        <br><br>
-        <svg height = "1">
-                <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-              </svg><br><br>
-              <a href="https://arxiv.org/pdf/2308.11744.pdf">
-                <papertitle>Efficient Controllable Multi-Task Architectures</papertitle>
-              </a>
-              <br>
-              <strong>Abhishek Aich</strong>,
-        <a href="https://samschulter.github.io/">Samuel Schulter</a>,
-        <a href="https://vcg.engr.ucr.edu/people/amit-roy-chowdhury">Amit K. Roy-Chowdhury</a>,
-        <a href="https://cseweb.ucsd.edu/~mkchandraker/">Manmohan Chandraker</a>,
-        <a href="https://yuminsuh.github.io/">Yumin Suh</a>
-        <br><em>IEEE/CVF ICCV</em>, 2023
-        <br><br>
-        <svg height = "1">
-                <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-              </svg><br><br>
-              <a href="https://arxiv.org/pdf/2209.09502.pdf">
-                <papertitle>GAMA: Generative Adversarial Multi-Object Scene Attacks</papertitle>
-              </a>
-              <br>
-              <strong>Abhishek Aich</strong>*,
-        <a href="https://tacalvin.github.io/">Calvin-Khang Ta</a>*,
-        <a href="https://agupt013.github.io/">Akash Gupta</a>,
-        <a href='https://www.cs.ucr.edu/~csong/'>Chengyu Song</a>,
-        <a href="https://www.cs.ucr.edu/~krish/">Srikanth Krishnamurthy</a>,
-        <a href="https://intra.ece.ucr.edu/~sasif/">M. Salman Asif</a>,
-        <a href="https://vcg.engr.ucr.edu/people/amit-roy-chowdhury">Amit K. Roy-Chowdhury</a>
-        <br><em>NeurIPS</em>, 2022 &nbsp
-        [<a href="https://abhishekaich27.github.io/gama.html">Project page</a>]&nbsp
-        [<a href="https://github.com/abhishekaich27/GAMA-pytorch">Code</a>]
-              <br><br>
-              <svg height = "1">
-                <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-              </svg><br><br>
-        <a href="https://arxiv.org/pdf/2212.07010.pdf">
-                <papertitle>Cross-Domain Video Anomaly Detection without Target Domain Adaptation</papertitle>
-              </a>
-              <br>
-              <strong>Abhishek Aich</strong>,
-        <a href="https://www.merl.com/people/kpeng">Kuan-Chuan Peng</a>,
-        <a href="https://vcg.engr.ucr.edu/people/amit-roy-chowdhury">Amit K. Roy-Chowdhury</a> 
-        <br><em>IEEE/CVF WACV</em>, 2023 &nbsp
-              <br><br>
-              <svg height = "1">
-                <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-              </svg><br><br>
-        <a href="https://arxiv.org/pdf/2209.09883.pdf">
-                <papertitle>Leveraging Local Patch Differences in Multi-Object Scenes for Generative Adversarial Attacks</papertitle>
-              </a>
-              <br>
-              <strong>Abhishek Aich</strong>,
-        <a href="https://www.linkedin.com/in/shasha-li-538b72102/">Shasha Li</a>,
-        <a href='https://www.cs.ucr.edu/~csong/'>Chengyu Song</a>,
-        <a href="https://intra.ece.ucr.edu/~sasif/">M. Salman Asif</a>,
-        <a href="https://www.cs.ucr.edu/~krish/">Srikanth Krishnamurthy</a>,
-        <a href="https://vcg.engr.ucr.edu/people/amit-roy-chowdhury">Amit K. Roy-Chowdhury</a> 
-        <br><em>IEEE/CVF WACV</em>, 2023 &nbsp
-              <br><br>
-              <svg height = "1">
-                <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-              </svg><br><br>
-        <a href="https://arxiv.org/pdf/2206.01856.pdf">
-                <papertitle>Poisson2Sparse: Self-Supervised Poisson Denoising From a Single Image</papertitle>
-              </a>
-              <br>
-        <a href="https://tacalvin.github.io/">Calvin-Khang Ta</a>*,
-              <strong>Abhishek Aich</strong>*,
-        <a href="https://agupt013.github.io/">Akash Gupta</a>*,
-        <a href="https://vcg.engr.ucr.edu/people/amit-roy-chowdhury">Amit K. Roy-Chowdhury</a> 
-        <br><em>MICCAI</em>, 2022 &nbsp
-        [<a href="https://github.com/tacalvin/Poisson2Sparse">Code</a>]
-              <br><br>
-              <svg height = "1">
-                <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-              </svg><br><br>
-        <a href="https://arxiv.org/pdf/2110.01823.pdf">
-                <papertitle>Adversarial Attacks on Black Box Video Classifiers: Leveraging the Power of Geometric Transformations</papertitle>
-              </a>
-              <br>
-        <a href="https://www.linkedin.com/in/shasha-li-538b72102/">Shasha Li</a>*,
-              <strong>Abhishek Aich</strong>*,
-        <a href="https://www.shitong.me/">Shitong Zhu</a>,
-        <a href="https://intra.ece.ucr.edu/~sasif/">M. Salman Asif</a>,
-        <a href='https://www.cs.ucr.edu/~csong/'>Chengyu Song</a>,
-        <a href="https://vcg.engr.ucr.edu/people/amit-roy-chowdhury">Amit K. Roy-Chowdhury</a>,
-        <a href="https://www.cs.ucr.edu/~krish/">Srikanth Krishnamurthy</a>      
-              <br><em>NeurIPS</em>, 2021 &nbsp
-        [<a href="https://abhishekaich27.github.io/geotrap.html">Project page</a>]&nbsp
-        [<a href="https://github.com/sli057/Geo-TRAP">Code</a>]
-              <br><br>
-              <svg height = "1">
-                <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-              </svg><br><br>
-        <a href="https://arxiv.org/pdf/2107.11878.pdf">
-                <papertitle>Spatio-Temporal Representation Factorization for Video-based Person Re-Identification</papertitle>
-              </a>
-              <br>
-              <strong>Abhishek Aich</strong>,
-        <a href="https://www.linkedin.com/in/meng-zheng-27ab35144/">Meng Zheng</a>,
-        <a href="https://karanams.github.io/">Srikrishna Karanam</a>,
-        <a href='https://scholar.google.com/citations?user=S2BT6ogAAAAJ&hl=en&oi=ao'>Terrence Chen</a>,       
-        <a href="https://vcg.engr.ucr.edu/people/amit-roy-chowdhury">Amit K. Roy-Chowdhury</a>,
-        <a href="http://wuziyan.com/">Ziyan Wu</a>         
-              <br><em>IEEE/CVF ICCV</em>, 2021 &nbsp
-              [<a href="strf.html">Project page</a>] &nbsp
-              <br><br>
-              <svg height = "1">
-                <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-              </svg><br><br>
-              <a href="https://agupt013.github.io/data/pubs/acm20_alanet.pdf">
-                <papertitle>ALANET: Adaptive Latent Attention Network for Joint Video Deblurring and Interpolation</papertitle>
-              </a>
-              <br>
-              <a href="https://agupt013.github.io/">Akash Gupta</a>,
-              <strong>Abhishek Aich</strong>, 
-              <a href="https://vcg.engr.ucr.edu/people/amit-roy-chowdhury">Amit K. Roy-Chowdhury</a>
-              <br><em>ACM MM</em>, 2020 &nbsp
-              [<a href="https://agupt013.github.io/ALANET.html">Project page</a>]&nbsp
-        [<a href="https://github.com/agupt013/ALANET/tree/master">Code</a>]
-              <br><br>
-              <svg height = "1">
-                <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-              </svg><br><br>
-              <a href="https://arxiv.org/abs/2003.09565">
-                <papertitle>Non-Adversarial Video Synthesis with Learned Priors</papertitle>
-              </a>
-              <br>
-              <strong>Abhishek Aich</strong>*,
-              <a href="https://agupt013.github.io/">Akash Gupta</a>*, 
-              <a href="https://rpand002.github.io/">Rameswar Panda</a>, 
-              <a href="https://www.linkedin.com/in/rakib-hyder-b03123a2/">Rakib Hyder</a>, 
-              <a href="https://intra.ece.ucr.edu/~sasif/">M. Salman Asif</a>, 
-              <a href="https://vcg.engr.ucr.edu/people/amit-roy-chowdhury">Amit K. Roy-Chowdhury</a>
-              <br><em>IEEE/CVF CVPR</em>, 2020 &nbsp
-              [<a href="navsynth.html">Project page</a>]&nbsp
-              [<a href="https://github.com/abhishekaich27/Navsynth/">Code</a>]
-              <br><br>
-              <svg height = "1">
-                <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-              </svg><br><br>
-              <a href="https://vcg.ece.ucr.edu/sites/g/files/rcwecm2661/files/2020-05/ISBI2020_CellEnhancement.pdf">
-                <papertitle>Deep Quantized Representation for Enhanced Reconstruction</papertitle>
-              </a>
-              <br>
-              Akash Gupta, <strong>Abhishek Aich</strong>, Kevin Rodriguez, G. Venugopala Reddy, Amit K. Roy-Chowdhury <br>
-              <em>ISBI Workshop</em>, 2020 &nbsp 
-              [<a href="https://github.com/agupt013/enhancedRec.git">Code</a>]
-              <br>
-            </td>
-          </tr>
-        </table>
-        <table class="borderedUpdate" width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><br><br>
-          <heading><b>&nbsp&nbsp&nbsp Technical Reports/ Writeups/ Notes: </b></heading><br>
-          <tr>
-            <td width="100%" valign="middle">
-              <p style="text-align:justify">
-                Edit requests/additions/corrections are welcome!<br>
-                &nbsp<i class="fa fa-paperclip" style="font-size:12px"></i> <a href="data/WriteUps/SSMs.pdf">State Space Models: Nuts and Bolts</a><br>
-                &nbsp<i class="fa fa-paperclip" style="font-size:12px"></i> <a href="https://arxiv.org/pdf/2105.04093">Elastic Weight Consolidation (EWC): Nuts and Bolts</a><br>
-              </p>
-            </td>
-          </tr>
-        </table>
-        <!-- <heading><b>&nbsp&nbsp&nbsp Selected Older Publications: </b></heading><br>
-        <table class="borderedUpdate" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <td valign="top" width="100%">
-              <a href="https://ieeexplore.ieee.org/document/8228078">
-                <papertitle>A Novel CS Beamformer root-MUSIC Algorithm and its Subspace Deviation Analysis</papertitle>
-              </a>
-              <br>
-              <strong>Abhishek Aich</strong>,
-              <a href="https://www.nitt.edu/home/academics/departments/ece/faculty/pp/">P. Palanisamy</a>
-              <br>
-              <em>IEEE Region 10 Conference (<b>TENCON</b>)</em>, 2017
-              <br><br>
-              <svg height = "1">
-                <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-              </svg><br><br>
+            <div class="mt-5 flex flex-wrap gap-2 text-xs">
+<span class="px-3 py-1 rounded-full bg-gray-100 text-gray-700">Agentic AI</span>
+              <span class="px-3 py-1 rounded-full bg-gray-100 text-gray-700">Vision-language models</span>
+              <span class="px-3 py-1 rounded-full bg-gray-100 text-gray-700">Open-vocab perception</span>
+              <span class="px-3 py-1 rounded-full bg-gray-100 text-gray-700">Efficient transformers</span>
+            </div>
+          </div>
+          <div class="p-6 rounded-2xl border border-gray-200 bg-gray-50/50 card-hover">
+            <h3 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+              <i data-lucide="briefcase" class="w-5 h-5 text-gray-700"></i>
+              Industry & Labs
+            </h3>
+            <ul class="text-sm text-gray-700 space-y-2">
+              <li><a href="https://www.nec-labs.com/research/media-analytics/home/" target="_blank" rel="noreferrer" class="text-gray-900 hover:underline">NEC Labs America</a> (Researcher)</li>
+              <li><a href="https://www.nec-labs.com/research/media-analytics/home/" target="_blank" rel="noreferrer" class="text-gray-900 hover:underline">NEC Labs America</a> (Intern, 2022)</li>
+              <li><a href="https://www.merl.com/" target="_blank" rel="noreferrer" class="text-gray-900 hover:underline">MERL</a> (Intern, 2021)</li>
+              <li><a href="https://www.uii-ai.com/" target="_blank" rel="noreferrer" class="text-gray-900 hover:underline">UII America</a> (Intern, 2020)</li>
+            </ul>
+          </div>
+        </div>
 
-            <a href="https://ieeexplore.ieee.org/document/7848508">
-              <papertitle>A Strict Bound for Dimension of Measurement Matrix for CS Beamformer MUSIC Algorithm</papertitle>
-            </a>
-            <br>
-            <strong>Abhishek Aich</strong>,
-            <a href="https://www.nitt.edu/home/academics/departments/ece/faculty/pp/">P. Palanisamy</a>
-            <br>
-            <em>IEEE Region 10 Conference (<b>TENCON</b>)</em>, 2016
-            <br><br>
-            <svg height = "1">
-              <line x1="0" y1="0" x2="1600" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
-            </svg><br><br>
+        <div class="flex flex-wrap gap-3 text-sm">
+          <!-- Replace email/CV if you want -->
+          <button type="button" id="email-copy-btn"
+             class="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors cursor-pointer border-0">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+            <span id="email-copy-text">Email</span>
+          </button>
 
-            <a href="https://ieeexplore.ieee.org/document/8286749">
-              <papertitle>On Application of OMP and CoSaMP Algorithms for DOA Estimation Problem</papertitle>
-            </a>
-            <br>
-            <strong>Abhishek Aich</strong>,
-            <a href="https://www.nitt.edu/home/academics/departments/ece/faculty/pp/">P. Palanisamy</a>
-            <br>
-            <em>IEEE International Conference on Communication and Signal Processing (<b>ICCSP</b>)</em>, 2017
-            <br>
-          </td>
-        </tr>
+          <a href="data/AbhishekAich-CV.pdf"
+             class="inline-flex items-center gap-2 px-4 py-2 chip rounded-full hover:border-gray-900 hover:text-gray-900 transition-colors"
+             target="_blank" rel="noreferrer">
+            <i data-lucide="file-text" class="w-4 h-4"></i>
+            CV
+          </a>
 
-       <table class="borderedUpdate" width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><br><br>
-          <heading><b>&nbsp&nbsp&nbsp Technical Reports/ Writeups/ Notes: </b></heading><br>
-          <tr>
-            <td width="100%" valign="middle">
-              <p style="text-align:justify">
-                Edit requests/additions/corrections are welcome!<br>
-                &nbsp<i class="fa fa-paperclip" style="font-size:12px"></i> <a href="data/WriteUps/ADMM_Review.pdf">Brief Review of Alternating Direction Method Of Multipliers</a><br>
-                &nbsp<i class="fa fa-paperclip" style="font-size:12px"></i> <a href="data/WriteUps/Lifelong_Learning_Presentation.pdf">Lifelong Learning: A short review</a><br>
-                &nbsp<i class="fa fa-paperclip" style="font-size:12px"></i> <a href="data/WriteUps/EE_260_Project_Report_Abhishek_Aich.pdf">Improved DOA Estimation in KR-MUSIC Algorithm with Non-Uniform Noise</a> (EE 260B (Winter 2019) Project Report)<br>
-                &nbsp<i class="fa fa-paperclip" style="font-size:12px"></i> <a href="data/WriteUps/EWC_nuts_and_bolts.pdf">Elastic Weight Consolidation (EWC): Nuts and Bolts</a><br>
-                &nbsp<i class="fa fa-paperclip" style="font-size:12px"></i> <a href="data/WriteUps/Image_video_restoration_SPRING_2020.pdf">Image/Video Restoration Problems: Brief Review</a><br>
-              </p>
-            </td>
-          </tr>
-        </table> -->
-        
-        <table class="container">
-          <tr>
-          <td>
-          <p style="font-size:18px" align="center">
-            <center>
-            <br><br>
-            (<b>Credits:</b> When in <a href="https://abhishekaich27.github.io">
-            Rome </a>, do as the  <a href="https://jonbarron.info">
-            Romans</a> do.)
-            </center>
-          </p>
-          </td>
-        </tr>
-        </table>
-        </td>
-    </tr>
-  </table>
+          <a href="https://scholar.google.com/citations?user=8GhG46cAAAAJ&hl=en&authuser=1"
+             target="_blank" rel="noreferrer"
+             class="inline-flex items-center gap-2 px-4 py-2 chip rounded-full hover:border-gray-900 hover:text-gray-900 transition-colors">
+            <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+            Google Scholar
+          </a>
 
+          <a href="https://github.com/abhishekaich27"
+             target="_blank" rel="noreferrer"
+             class="inline-flex items-center gap-2 px-4 py-2 chip rounded-full hover:border-gray-900 hover:text-gray-900 transition-colors">
+            <i data-lucide="github" class="w-4 h-4"></i>
+            GitHub
+          </a>
 
+          <a href="https://www.linkedin.com/in/abhishekaich27/"
+             target="_blank" rel="noreferrer"
+             class="inline-flex items-center gap-2 px-4 py-2 chip rounded-full hover:border-gray-900 hover:text-gray-900 transition-colors">
+            <i data-lucide="linkedin" class="w-4 h-4"></i>
+            LinkedIn
+          </a>
+        </div>
+
+        <div class="mt-8 max-w-3xl">
+          <div class="p-4 rounded-2xl border border-gray-200 bg-gray-50/50">
+            <p class="text-sm text-gray-700 leading-relaxed">
+              <span class="font-semibold text-gray-900">Research opportunities:</span>
+              I’m happy to collaborate on projects involving (not limited to) agentic AI, vision-language models,
+              open-vocab perception, and efficient transformers. If you are interested,
+              please send me an email.
+            </p>
+          </div>
+        </div>
+    </div>
+  </header>
+
+  <!-- Updates -->
+  <section id="updates" class="py-14 px-6 max-w-5xl mx-auto border-t border-gray-100 bg-gray-50/40">
+    <div class="flex items-end justify-between gap-6 mb-6">
+      <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Updates</h2>
+      <p class="text-xs text-gray-500">Selected highlights from recent activity</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="p-6 rounded-2xl border border-gray-200 bg-white card-hover">
+        <h3 class="font-semibold text-gray-900 mb-4 flex items-center gap-2">
+          <i data-lucide="megaphone" class="w-5 h-5 text-gray-700"></i>
+          Workshops & Service
+        </h3>
+
+        <ul class="space-y-3 text-sm text-gray-700">
+          <li class="flex gap-3">
+            <span class="text-gray-400 font-mono flex-shrink-0">Nov 2025</span>
+            <span>Organizing CVPR 2026 Workshop: <a class="text-gray-900 hover-underline font-medium" href="https://adfmw.github.io/cvpr26/" target="_blank" rel="noreferrer">Anomaly Detection with Foundation Models (ADFM)</a>.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-gray-400 font-mono flex-shrink-0">Oct 2025</span>
+            <span>Organizing AAAI 2026 Workshop: <a class="text-gray-900 hover-underline font-medium" href="https://aibsdworkshop.github.io/2026/index.html" target="_blank" rel="noreferrer">AI with Biased or Scarce Data (AIBSD)</a>.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-gray-400 font-mono flex-shrink-0">May 2025</span>
+            <span>Organizing ICCV 2025 Workshop: <a class="text-gray-900 hover-underline font-medium" href="https://adfmw.github.io/iccv25/" target="_blank" rel="noreferrer">Anomaly Detection with Foundation Models (AFDM)</a>.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-gray-200 bg-white card-hover">
+        <h3 class="font-semibold text-gray-900 mb-4 flex items-center gap-2">
+          <i data-lucide="trophy" class="w-5 h-5 text-gray-700"></i>
+          News
+        </h3>
+
+        <ul class="space-y-3 text-sm text-gray-700">
+          <li class="flex gap-3">
+            <span class="text-gray-400 font-mono flex-shrink-0">Sept 2025</span>
+            <span>Paper accepted in <a class="text-gray-900 hover-underline font-medium" href="https://neurips.cc" target="_blank" rel="noreferrer">NeurIPS 2025</a> (vision-based LLM grounding for dash-cam video reasoning).</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-gray-400 font-mono flex-shrink-0">July 2025</span>
+            <span>Paper accepted in ICCV 2025 Workshop: <a class="text-gray-900 hover-underline font-medium" href="https://sites.google.com/view/datacv-workshop/" target="_blank" rel="noreferrer">4th DataCV Workshop & Challenge</a>.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-gray-400 font-mono flex-shrink-0">Jan 2025</span>
+            <span>Paper accepted in <a class="text-gray-900 hover-underline font-medium" href="https://iclr.cc" target="_blank" rel="noreferrer">ICLR 2025</a> (efficient encoders for Mask2Former-style architectures).</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-gray-400 font-mono flex-shrink-0">Jan 2025</span>
+            <span>Won 1st place in <a class="text-gray-900 hover-underline font-medium" href="https://its.dot.gov/isc2025/" target="_blank" rel="noreferrer">U.S. DOT Intersection Safety Challenge 2025 (Stage 1B)</a>.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="py-14 px-6 max-w-5xl mx-auto border-t border-gray-100">
+    <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-6">Selected Publications</h2>
+    <p class="text-xs text-gray-500 mb-6">See <a href="https://scholar.google.com/citations?user=8GhG46cAAAAJ&hl=en&authuser=1" target="_blank" rel="noreferrer" class="text-gray-600 hover:underline">Google Scholar</a> for complete list.</p>
+
+    <div class="space-y-3">
+      <!-- 2025 -->
+      <div class="paper-row rounded-xl p-5 border border-gray-200">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-gray-900">
+              iFinder: Structured Zero-Shot Vision-Based LLM Grounding for Dash-Cam Video Reasoning
+            </h3>
+            <p class="text-sm text-gray-600 mt-1">
+              Manyi Yao, Bingbing Zhuang, Sparsh Garg, Amit Roy-Chowdhury, Christian Shelton, Manmohan Chandraker, <span class="font-semibold text-gray-900">Abhishek Aich</span>
+            </p>
+            <p class="text-xs text-gray-500 mt-2">NeurIPS 2025</p>
+          </div>
+          <div class="flex gap-3 text-xs shrink-0">
+            <a class="text-blue-700 hover:underline" href="https://arxiv.org/pdf/2509.19552.pdf" target="_blank" rel="noreferrer">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-row rounded-xl p-5 border border-gray-200">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-gray-900">
+              Mapillary Vistas Validation for Fine-Grained Traffic Signs: A Benchmark Revealing Vision-Language Model Limitations
+            </h3>
+            <p class="text-sm text-gray-600 mt-1">
+              Sparsh Garg, <span class="font-semibold text-gray-900">Abhishek Aich</span>
+            </p>
+            <p class="text-xs text-gray-500 mt-2">ICCV Workshop (4th DataCV Workshop & Challenge), 2025</p>
+          </div>
+          <div class="flex gap-3 text-xs shrink-0">
+            <a class="text-blue-700 hover:underline" href="https://arxiv.org/pdf/2508.02047.pdf" target="_blank" rel="noreferrer">Paper</a>
+            <a class="text-blue-700 hover:underline" href="https://github.com/nec-labs-ma/relabeling" target="_blank" rel="noreferrer">Code/Dataset</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-row rounded-xl p-5 border border-gray-200">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-gray-900">
+              Progressive Token Length Scaling in Transformer Encoders for Efficient Universal Segmentation
+            </h3>
+            <p class="text-sm text-gray-600 mt-1">
+              <span class="font-semibold text-gray-900">Abhishek Aich</span>, Yumin Suh, Samuel Schulter, Manmohan Chandraker
+            </p>
+            <p class="text-xs text-gray-500 mt-2">ICLR 2025</p>
+          </div>
+          <div class="flex gap-3 text-xs shrink-0">
+            <a class="text-blue-700 hover:underline" href="https://arxiv.org/pdf/2404.14657.pdf" target="_blank" rel="noreferrer">Paper</a>
+            <a class="text-blue-700 hover:underline" href="https://github.com/abhishekaich27/proscale-pytorch" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2024 -->
+      <div class="paper-row rounded-xl p-5 border border-gray-200">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-gray-900">
+              Efficient Transformer Encoders for Mask2Former-style Models
+            </h3>
+            <p class="text-sm text-gray-600 mt-1">
+              Manyi Yao, <span class="font-semibold text-gray-900">Abhishek Aich</span>, Yumin Suh, Amit K. Roy-Chowdhury, Christian R. Shelton, Manmohan Chandraker
+            </p>
+            <p class="text-xs text-gray-500 mt-2">arXiv 2024</p>
+          </div>
+          <div class="flex gap-3 text-xs shrink-0">
+            <a class="text-blue-700 hover:underline" href="https://arxiv.org/pdf/2404.15244.pdf" target="_blank" rel="noreferrer">Paper</a>
+            <a class="text-blue-700 hover:underline" href="https://github.com/GYeow/ECO-M2F" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2023 -->
+      <div class="paper-row rounded-xl p-5 border border-gray-200">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-gray-900">
+              Efficient Controllable Multi-Task Architectures
+            </h3>
+            <p class="text-sm text-gray-600 mt-1">
+              <span class="font-semibold text-gray-900">Abhishek Aich</span>, Samuel Schulter, Amit K. Roy-Chowdhury, Manmohan Chandraker, Yumin Suh
+            </p>
+            <p class="text-xs text-gray-500 mt-2">ICCV 2023</p>
+          </div>
+          <div class="flex gap-3 text-xs shrink-0">
+            <a class="text-blue-700 hover:underline" href="https://arxiv.org/pdf/2308.11744.pdf" target="_blank" rel="noreferrer">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-row rounded-xl p-5 border border-gray-200">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-gray-900">
+              Cross-Domain Video Anomaly Detection without Target Domain Adaptation
+            </h3>
+            <p class="text-sm text-gray-600 mt-1">
+              <span class="font-semibold text-gray-900">Abhishek Aich</span>, Kuan-Chuan Peng, Amit K. Roy-Chowdhury
+            </p>
+            <p class="text-xs text-gray-500 mt-2">WACV 2023</p>
+          </div>
+          <div class="flex gap-3 text-xs shrink-0">
+            <a class="text-blue-700 hover:underline" href="https://arxiv.org/pdf/2212.07010.pdf" target="_blank" rel="noreferrer">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-row rounded-xl p-5 border border-gray-200">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-gray-900">
+              Leveraging Local Patch Differences in Multi-Object Scenes for Generative Adversarial Attacks
+            </h3>
+            <p class="text-sm text-gray-600 mt-1">
+              <span class="font-semibold text-gray-900">Abhishek Aich</span>, Shasha Li, Chengyu Song, M. Salman Asif, Srikanth Krishnamurthy, Amit K. Roy-Chowdhury
+            </p>
+            <p class="text-xs text-gray-500 mt-2">WACV 2023</p>
+          </div>
+          <div class="flex gap-3 text-xs shrink-0">
+            <a class="text-blue-700 hover:underline" href="https://arxiv.org/pdf/2209.09883.pdf" target="_blank" rel="noreferrer">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2022 -->
+      <div class="paper-row rounded-xl p-5 border border-gray-200">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-gray-900">
+              GAMA: Generative Adversarial Multi-Object Scene Attacks
+            </h3>
+            <p class="text-sm text-gray-600 mt-1">
+              <span class="font-semibold text-gray-900">Abhishek Aich</span>*,
+              Calvin-Khang Ta*, Akash Gupta, Chengyu Song, Srikanth Krishnamurthy, M. Salman Asif, Amit K. Roy-Chowdhury
+            </p>
+            <p class="text-xs text-gray-500 mt-2">NeurIPS 2022</p>
+          </div>
+          <div class="flex gap-3 text-xs shrink-0">
+            <a class="text-blue-700 hover:underline" href="https://arxiv.org/pdf/2209.09502.pdf" target="_blank" rel="noreferrer">Paper</a>
+            <a class="text-blue-700 hover:underline" href="https://github.com/abhishekaich27/GAMA-pytorch" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-row rounded-xl p-5 border border-gray-200">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-gray-900">Poisson2Sparse: Self-Supervised Poisson Denoising From a Single Image</h3>
+            <p class="text-sm text-gray-600 mt-1">Calvin-Khang Ta*, <span class="font-semibold text-gray-900">Abhishek Aich</span>*, Akash Gupta*, Amit K. Roy-Chowdhury</p>
+            <p class="text-xs text-gray-500 mt-2">MICCAI 2022</p>
+          </div>
+          <div class="flex gap-3 text-xs shrink-0">
+            <a class="text-blue-700 hover:underline" href="https://arxiv.org/pdf/2206.01856.pdf" target="_blank" rel="noreferrer">Paper</a>
+            <a class="text-blue-700 hover:underline" href="https://github.com/tacalvin/Poisson2Sparse" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-row rounded-xl p-5 border border-gray-200">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-gray-900">Adversarial Attacks on Black Box Video Classifiers: Leveraging the Power of Geometric Transformations</h3>
+            <p class="text-sm text-gray-600 mt-1">Shasha Li*, <span class="font-semibold text-gray-900">Abhishek Aich</span>*, Shitong Zhu, M. Salman Asif, Chengyu Song, Amit K. Roy-Chowdhury, Srikanth Krishnamurthy</p>
+            <p class="text-xs text-gray-500 mt-2">NeurIPS 2021</p>
+          </div>
+          <div class="flex gap-3 text-xs shrink-0">
+            <a class="text-blue-700 hover:underline" href="https://arxiv.org/pdf/2110.01823.pdf" target="_blank" rel="noreferrer">Paper</a>
+            <a class="text-blue-700 hover:underline" href="https://github.com/sli057/Geo-TRAP" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-row rounded-xl p-5 border border-gray-200">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-gray-900">Spatio-Temporal Representation Factorization for Video-based Person Re-Identification</h3>
+            <p class="text-sm text-gray-600 mt-1"><span class="font-semibold text-gray-900">Abhishek Aich</span>, Meng Zheng, Srikrishna Karanam, Terrence Chen, Amit K. Roy-Chowdhury, Ziyan Wu</p>
+            <p class="text-xs text-gray-500 mt-2">ICCV 2021</p>
+          </div>
+          <div class="flex gap-3 text-xs shrink-0">
+            <a class="text-blue-700 hover:underline" href="https://arxiv.org/pdf/2107.11878.pdf" target="_blank" rel="noreferrer">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-row rounded-xl p-5 border border-gray-200">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-gray-900">ALANET: Adaptive Latent Attention Network for Joint Video Deblurring and Interpolation</h3>
+            <p class="text-sm text-gray-600 mt-1">Akash Gupta, <span class="font-semibold text-gray-900">Abhishek Aich</span>, Amit K. Roy-Chowdhury</p>
+            <p class="text-xs text-gray-500 mt-2">ACM MM 2020</p>
+          </div>
+          <div class="flex gap-3 text-xs shrink-0">
+            <a class="text-blue-700 hover:underline" href="https://agupt013.github.io/data/pubs/acm20_alanet.pdf" target="_blank" rel="noreferrer">Paper</a>
+            <a class="text-blue-700 hover:underline" href="https://github.com/agupt013/ALANET/tree/master" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-row rounded-xl p-5 border border-gray-200">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-gray-900">Non-Adversarial Video Synthesis with Learned Priors</h3>
+            <p class="text-sm text-gray-600 mt-1"><span class="font-semibold text-gray-900">Abhishek Aich</span>*, Akash Gupta*, Rameswar Panda, Rakib Hyder, M. Salman Asif, Amit K. Roy-Chowdhury</p>
+            <p class="text-xs text-gray-500 mt-2">CVPR 2020</p>
+          </div>
+          <div class="flex gap-3 text-xs shrink-0">
+            <a class="text-blue-700 hover:underline" href="https://arxiv.org/abs/2003.09565" target="_blank" rel="noreferrer">Paper</a>
+            <a class="text-blue-700 hover:underline" href="https://github.com/abhishekaich27/Navsynth/" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Notes -->
+  <section id="notes" class="py-14 px-6 max-w-5xl mx-auto border-t border-gray-100 bg-gray-50/40">
+    <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-6">Technical Reports / Notes</h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <a href="https://abhishekaich27.github.io/data/WriteUps/SSMs.pdf"
+         class="p-6 rounded-2xl border border-gray-200 bg-white card-hover flex items-start justify-between gap-4"
+         target="_blank" rel="noreferrer">
+        <div>
+          <div class="text-xs text-gray-500 mb-2">Writeup</div>
+          <div class="font-semibold text-gray-900">State Space Models: Nuts and Bolts</div>
+          <div class="text-sm text-gray-600 mt-2">A practical, intuition-first walkthrough.</div>
+        </div>
+        <i data-lucide="external-link" class="w-4 h-4 text-gray-400"></i>
+      </a>
+
+      <a href="https://arxiv.org/pdf/2105.04093"
+         class="p-6 rounded-2xl border border-gray-200 bg-white card-hover flex items-start justify-between gap-4"
+         target="_blank" rel="noreferrer">
+        <div>
+          <div class="text-xs text-gray-500 mb-2">Writeup</div>
+          <div class="font-semibold text-gray-900">Elastic Weight Consolidation (EWC): Nuts and Bolts</div>
+          <div class="text-sm text-gray-600 mt-2">A concise reference + implementation notes.</div>
+        </div>
+        <i data-lucide="external-link" class="w-4 h-4 text-gray-400"></i>
+      </a>
+    </div>
+
+    <p class="text-xs text-gray-500 mt-6">Edit requests/additions/corrections are welcome!</p>
+  </section>
+
+  <footer class="py-6 px-6 max-w-5xl mx-auto border-t border-gray-100 mt-6">
+    <p class="text-sm text-gray-500">Copyright © 2026 Abhishek Aich</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    document.getElementById('email-copy-btn').addEventListener('click', function () {
+      var text = 'aaich001 at ucr dot edu';
+      var span = document.getElementById('email-copy-text');
+      function showCopied() {
+        span.textContent = 'Email copied';
+        setTimeout(function () { span.textContent = 'Email'; }, 2000);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(showCopied).catch(function () {
+          copyFallback(text);
+          showCopied();
+        });
+      } else {
+        copyFallback(text);
+        showCopied();
+      }
+      function copyFallback(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style.position = 'absolute';
+        el.style.left = '-9999px';
+        document.body.appendChild(el);
+        el.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(el);
+      }
+    });
+
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) navbar.classList.add('shadow-sm');
+      else navbar.classList.remove('shadow-sm');
+    });
+
+    // Smooth scroll for anchor links + close mobile menu
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('section').forEach(section => observer.observe(section));
+  </script>
 </body>
 </html>
