@@ -139,7 +139,7 @@
           </a>
         </div>
 
-        <div class="mt-8 max-w-3xl">
+        <div class="mt-8 w-full">
           <div class="p-4 rounded-2xl border border-gray-200 bg-gray-50/50">
             <p class="text-sm text-gray-700 leading-relaxed">
               <span class="font-semibold text-gray-900">Research opportunities:</span>
@@ -212,8 +212,10 @@
 
   <!-- Publications -->
   <section id="publications" class="py-14 px-6 max-w-5xl mx-auto border-t border-gray-100">
-    <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-6">Selected Publications</h2>
-    <p class="text-xs text-gray-500 mb-6">See <a href="https://scholar.google.com/citations?user=8GhG46cAAAAJ&hl=en&authuser=1" target="_blank" rel="noreferrer" class="text-gray-600 hover:underline">Google Scholar</a> for complete list.</p>
+    <div class="flex items-end justify-between gap-6 mb-6">
+      <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Selected Publications</h2>
+      <p class="text-xs text-gray-500">See <a href="https://scholar.google.com/citations?user=8GhG46cAAAAJ&hl=en&authuser=1" target="_blank" rel="noreferrer" class="text-gray-600 hover:underline">Google Scholar</a> for complete list.</p>
+    </div>
 
     <div class="space-y-3">
       <!-- 2025 -->
@@ -275,12 +277,12 @@
         <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
           <div>
             <h3 class="font-semibold text-gray-900">
-              Efficient Transformer Encoders for Mask2Former-style Models
+              Image-Specific Adaptation of Transformer Encoders for Compute-Efficient Segmentation
             </h3>
             <p class="text-sm text-gray-600 mt-1">
               Manyi Yao, <span class="font-semibold text-gray-900">Abhishek Aich</span>, Yumin Suh, Amit K. Roy-Chowdhury, Christian R. Shelton, Manmohan Chandraker
             </p>
-            <p class="text-xs text-gray-500 mt-2">arXiv 2024</p>
+            <p class="text-xs text-gray-500 mt-2">WACV Workshop (5th Workshop on Image/Video/Audio Quality Assessment in Computer Vision, VLM and Diffusion Model), 2026</p>
           </div>
           <div class="flex gap-3 text-xs shrink-0">
             <a class="text-blue-700 hover:underline" href="https://arxiv.org/pdf/2404.15244.pdf" target="_blank" rel="noreferrer">Paper</a>
@@ -435,7 +437,10 @@
 
   <!-- Notes -->
   <section id="notes" class="py-14 px-6 max-w-5xl mx-auto border-t border-gray-100 bg-gray-50/40">
-    <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-6">Technical Reports / Notes</h2>
+    <div class="flex items-end justify-between gap-6 mb-6">
+      <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Technical Reports / Notes</h2>
+      <p class="text-xs text-gray-500">Edit requests/additions/corrections are welcome!</p>
+    </div>
 
     <div class="grid md:grid-cols-2 gap-6">
       <a href="https://abhishekaich27.github.io/data/WriteUps/SSMs.pdf"
@@ -460,12 +465,13 @@
         <i data-lucide="external-link" class="w-4 h-4 text-gray-400"></i>
       </a>
     </div>
-
-    <p class="text-xs text-gray-500 mt-6">Edit requests/additions/corrections are welcome!</p>
   </section>
 
   <footer class="py-6 px-6 max-w-5xl mx-auto border-t border-gray-100 mt-6">
-    <p class="text-sm text-gray-500">Copyright © 2026 Abhishek Aich</p>
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+      <p>Copyright © 2026 Abhishek Aich</p>
+      <p>Built with <a href="https://github.com/tailwindlabs/tailwindcss" class="underline hover:text-gray-700" target="_blank" rel="noopener noreferrer">Tailwind CSS</a>.</p>
+    </div>
   </footer>
 
   <script>
