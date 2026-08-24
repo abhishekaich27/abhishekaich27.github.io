@@ -29,6 +29,10 @@
     .paper-row { transition: background-color 0.2s ease, transform 0.2s ease; }
     .paper-row:hover { background-color: rgba(0,0,0,0.03); transform: translateX(6px); }
     .chip { border: 1px solid rgba(0,0,0,0.12); }
+    .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background-color: rgba(156, 163, 175, 0.4); border-radius: 4px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover { background-color: rgba(156, 163, 175, 0.7); }
   </style>
 
   <script>
@@ -223,32 +227,36 @@
         </div>
       </div>
 
-      <div class="p-6 rounded-2xl border border-gray-200 dark:border-gray-800 dark:border-gray-800 bg-white dark:bg-gray-900 card-hover">
-        <h3 class="font-semibold text-gray-900 dark:text-white dark:text-white mb-4 flex items-center gap-2">
+      <div class="p-6 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 card-hover">
+        <h3 class="font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
           <i data-lucide="trophy" class="w-5 h-5 text-gray-700 dark:text-gray-300"></i>
           News
         </h3>
 
-        <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
+        <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300 max-h-[250px] overflow-y-auto pr-2 custom-scrollbar">
+          <li class="flex gap-3">
+            <span class="text-gray-400 font-mono flex-shrink-0">Aug 2026</span>
+            <span>Paper accepted in ECCV 2026 Workshop: <a class="text-gray-900 dark:text-white hover-underline font-medium" href="https://arxiv.org/abs/2608.19380" target="_blank" rel="noreferrer">DriveX - 6th Workshop on Foundation Models for Autonomous Driving</a>.</span>
+          </li>
           <li class="flex gap-3">
             <span class="text-gray-400 font-mono flex-shrink-0">Mar 2026</span>
-            <span>Paper accepted to <a class="text-gray-900 dark:text-white dark:text-white hover-underline font-medium" href="https://cvpr.thecvf.com/" target="_blank" rel="noreferrer">CVPR Findings 2026</a> (generalizable multi-level semantic editing for driving scenes).</span>
+            <span>Paper accepted to <a class="text-gray-900 dark:text-white hover-underline font-medium" href="https://cvpr.thecvf.com/" target="_blank" rel="noreferrer">CVPR Findings 2026</a> (generalizable multi-level semantic editing for driving scenes).</span>
           </li>
           <li class="flex gap-3">
             <span class="text-gray-400 font-mono flex-shrink-0">Sept 2025</span>
-            <span>Paper accepted in <a class="text-gray-900 dark:text-white dark:text-white hover-underline font-medium" href="https://neurips.cc" target="_blank" rel="noreferrer">NeurIPS 2025</a> (vision-based LLM grounding for dash-cam video reasoning).</span>
+            <span>Paper accepted in <a class="text-gray-900 dark:text-white hover-underline font-medium" href="https://neurips.cc" target="_blank" rel="noreferrer">NeurIPS 2025</a> (vision-based LLM grounding for dash-cam video reasoning).</span>
           </li>
           <li class="flex gap-3">
             <span class="text-gray-400 font-mono flex-shrink-0">July 2025</span>
-            <span>Paper accepted in ICCV 2025 Workshop: <a class="text-gray-900 dark:text-white dark:text-white hover-underline font-medium" href="https://sites.google.com/view/datacv-workshop/" target="_blank" rel="noreferrer">4th DataCV Workshop & Challenge</a>.</span>
+            <span>Paper accepted in ICCV 2025 Workshop: <a class="text-gray-900 dark:text-white hover-underline font-medium" href="https://sites.google.com/view/datacv-workshop/" target="_blank" rel="noreferrer">4th DataCV Workshop & Challenge</a>.</span>
           </li>
           <li class="flex gap-3">
             <span class="text-gray-400 font-mono flex-shrink-0">Jan 2025</span>
-            <span>Paper accepted in <a class="text-gray-900 dark:text-white dark:text-white hover-underline font-medium" href="https://iclr.cc" target="_blank" rel="noreferrer">ICLR 2025</a> (efficient encoders for Mask2Former-style architectures).</span>
+            <span>Paper accepted in <a class="text-gray-900 dark:text-white hover-underline font-medium" href="https://iclr.cc" target="_blank" rel="noreferrer">ICLR 2025</a> (efficient encoders for Mask2Former-style architectures).</span>
           </li>
           <li class="flex gap-3">
             <span class="text-gray-400 font-mono flex-shrink-0">Jan 2025</span>
-            <span>Won 1st place in <a class="text-gray-900 dark:text-white dark:text-white hover-underline font-medium" href="https://its.dot.gov/isc2025/" target="_blank" rel="noreferrer">U.S. DOT Intersection Safety Challenge 2025 (Stage 1B)</a>.</span>
+            <span>Won 1st place in <a class="text-gray-900 dark:text-white hover-underline font-medium" href="https://its.dot.gov/isc2025/" target="_blank" rel="noreferrer">U.S. DOT Intersection Safety Challenge 2025 (Stage 1B)</a>.</span>
           </li>
         </ul>
       </div>
@@ -264,6 +272,24 @@
 
     <div class="space-y-3">
       <!-- 2026 -->
+      <div class="paper-row rounded-xl p-5 border border-gray-200 dark:border-gray-800">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-gray-900 dark:text-white">
+              CAViAR: A Causal Video Dataset for Fine-Grained Accident Reasoning in Real-World Scenarios
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+              Sparsh Garg, Yi-Wen Chen, Vijay Kumar B G, <span class="font-semibold text-gray-900 dark:text-white">Abhishek Aich</span>
+            </p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">ECCV Workshop (DriveX - 6th Workshop on Foundation Models for Autonomous Driving), 2026</p>
+          </div>
+          <div class="flex gap-3 text-xs shrink-0">
+            <a class="text-blue-700 hover:underline" href="https://arxiv.org/pdf/2608.19380" target="_blank" rel="noreferrer">Paper</a>
+            <a class="text-blue-700 hover:underline" href="https://github.com/nec-labs-ma/CAViAR" target="_blank" rel="noreferrer">Code/Dataset</a>
+          </div>
+        </div>
+      </div>
+
       <div class="paper-row rounded-xl p-5 border border-gray-200 dark:border-gray-800">
         <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
           <div>
@@ -540,6 +566,10 @@
 
     <div class="p-6 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 card-hover">
       <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700 dark:text-gray-300">
+        <li>
+          <span class="font-medium text-gray-900 dark:text-white">Jiho Choi</span> (KAIST, Republic of Korea)
+          <span class="text-gray-400 font-mono text-xs ml-2">2026</span>
+        </li>
         <li>
           <span class="font-medium text-gray-900 dark:text-white">Ryoki Kanayama</span> (University of Electro-Communications (UEC), Japan)
           <span class="text-gray-400 font-mono text-xs ml-2">2025 - 2026</span>
